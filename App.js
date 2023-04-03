@@ -14,10 +14,11 @@ function Card(props) {
         }}
         source={{ uri: props.livro.capa }}
       />
-      <Text style={{ fontSize:20, color:'#fff' }}>{props.livro.titulo}</Text>
-      <Text style={{ fontSize:20, color:'#fff' }}>R${props.livro.preco.toString()}</Text>
+      <Text style={{ fontSize:20, color:'#1C0602' }}>{props.livro.titulo}</Text>
+      <Text style={{ fontSize:20, color:'#28494D' }}>R${props.livro.preco.toString()}</Text>
       <View style={{marginTop: 10}}>
-      <Button title="Remover" onPress={() => props.removeLivro(props.livro)} />
+    <Button title="Remover" onPress={() => props.removeLivro(props.livro)} />
+
       </View>
     </View>
   );
@@ -102,7 +103,7 @@ const styles = StyleSheet.create({
   },
   content: {
     flex: 1,
-    backgroundColor:'#124',
+    backgroundColor:'#DEBDB4',
     justifyContent:'center',
     alignItems:'center',
     width:'100%',
@@ -110,11 +111,11 @@ const styles = StyleSheet.create({
     flexWrap:'wrap',
   },
   card:{
-    backgroundColor:'#8BAAFA',
+    backgroundColor:'#E63B46',
     width:'45%',
     alignItems:"center",
     maxHeight:400,
-    borderRadius:10,
+    borderRadius:15,
     marginLeft:10,
     marginRight:10,
     marginTop:40,
